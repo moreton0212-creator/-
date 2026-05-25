@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>С днём рождения, Лиза!</title>
+  <link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+<div class="photo-zoom-overlay" id="photoZoom">
+  <div class="photo-zoom-card">
+    <img id="photoZoomImg" src="" alt="" />
+  </div>
+</div>
+
+<div class="camera-ui"></div>
+<div class="camera-timer" id="siteTimer">00:00:00:00</div>
+<div class="battery-status">
+  <div class="battery-icon"><span class="battery-fill" id="batteryFill"></span></div>
+  <span class="battery-percent" id="batteryPercent">86%</span>
+</div>
+<div class="corner lt"></div>
+<div class="corner rt"></div>
+<div class="corner lb"></div>
+<div class="corner rb"></div>
+
+<!-- РЕТРО-РАДИО -->
+<div class="retro-radio" id="retroRadio">
+  <div class="radio-antenna" id="radioAntenna"></div>
+  <div class="radio-speaker"></div>
+  <div class="radio-controls">
+    <div class="tuning-knob" id="tuningKnob">
+      <div class="knob-marker"></div>
+    </div>
+    <div class="power-btn" id="powerBtn"></div>
+  </div>
+  <div class="radio-label">вайб / радио</div>
+</div>
+
+<main class="page">
+  <section class="scene">
+    <div class="scattered-media">
+      <div class="floating-photo fp-1"><img src="1e1bde0ce6e85c5e36d09cb44de8773a.jpg" alt="" /></div>
+      <div class="floating-photo fp-2"><img src="2b8e1128f30b5b90cbab1ae138829d5c.jpg" alt="" /></div>
+      <div class="floating-photo fp-3"><img src="d39a16ecf6e2220f78aef473976eaf01.jpg" alt="" /></div>
+      <div class="floating-photo fp-4"><img src="83f37cc6-392a-4da0-a569-7e5f4a5e5353.jpg" alt="" /></div>
+    </div>
+    <div class="hero-card">
+      <div class="hero-frame wide">
+        <img src="3a931285bd90a97173748e22295a1faf.jpg" alt="Главная картинка" />
+      </div>
+      <h1>С днём рождения!</h1>
+    </div>
+  </section>
+
+  <section class="section wishes-section">
+    <h2 class="section-title">Список обязательного к исполнению</h2>
+    <div class="wishes">
+      <div class="wish"><div class="wish-number">01</div><div class="wish-text"><strong>Счастья</strong><span>(много)</span></div></div>
+      <div class="wish"><div class="wish-number">02</div><div class="wish-text"><strong>Поводов улыбаться</strong><span>(побольше)</span></div></div>
+      <div class="wish"><div class="wish-number">03</div><div class="wish-text"><strong>Вдохновения</strong><span>(по возможности)</span></div></div>
+      <div class="wish"><div class="wish-number">04</div><div class="wish-text"><strong>Здоровья</strong><span>(опционально)</span></div></div>
+      <div class="wish"><div class="wish-number">05</div><div class="wish-text"><strong>Лёгкости</strong><span>(вов сем)</span></div></div>
+      <div class="wish"><div class="wish-number">06</div><div class="wish-text"><strong>Исполнения желаний</strong><span>(всех)</span></div></div>
+      <div class="wish"><div class="wish-number">07</div><div class="wish-text"><strong>Искренних людей рядом</strong><span>(как мы)</span></div></div>
+      <div class="wish"><div class="wish-number">08</div><div class="wish-text"><strong>Любви</strong><span>(к себе)</span></div></div>
+    </div>
+  </section>
+
+  <section class="section feature-section">
+    <h2 class="section-title">Коллективное обращение</h2>
+    <div class="feature-card">
+      <div class="archive-photo tall feature-photo flipped-photo">
+        <img src="15.jpg" alt="" loading="lazy" />
+      </div>
+      <div class="message message-under-photo">
+        <strong>Желаем тебе</strong> всего перечисленного, ещё столько же, потом ещё побольше и чут-чут сверху.
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Наш слоняра</h2>
+    <div class="cinema-strip">
+      <div class="cinema-shot"><img src="1.jpg" alt="" loading="lazy" /></div>
+      <div class="cinema-shot"><img src="2.jpg" alt="" loading="lazy" /></div>
+      <div class="cinema-shot"><img src="3.jpg" alt="" loading="lazy" /></div>
+      <div class="cinema-shot"><img src="5.jpg" alt="" loading="lazy" /></div>
+      <div class="cinema-shot"><img src="6.jpg" alt="" loading="lazy" /></div>
+      <div class="cinema-shot"><img src="7.jpg" alt="" loading="lazy" /></div>
+      <div class="cinema-shot"><img src="8.jpg" alt="" loading="lazy" /></div>
+      <div class="cinema-shot"><img src="9.jpg" alt="" loading="lazy" /></div>
+      <div class="cinema-shot"><img src="10.jpg" alt="" loading="lazy" /></div>
+      <div class="cinema-shot"><img src="11.jpg" alt="" loading="lazy" /></div>
+      <div class="cinema-shot"><img src="4.jpg" alt="" loading="lazy" /></div>
+      <div class="cinema-shot"><img src="12.jpg" alt="" loading="lazy" /></div>
+    </div>
+  </section>
+
+  <section class="section quote-section">
+    <div class="quote-layout">
+      <div class="archive-photo quote-photo">
+        <img src="14.jpg" alt="" loading="lazy" />
+      </div>
+      <div class="quote-card">
+        <div class="quote-label">Как сказал великий:</div>
+        <blockquote class="quote-text">
+          Подарок — это отличный способ выразить своё отношение к кому-либо. Это нечто материальное, вы как бы говорите человеку: «Эй, брат! Я люблю тебя на столько-то долларов!»
+        </blockquote>
+        <br>— <a href="https://rezka-ua.tv/series/comedy/1814-ofis-2005-latest/56-dublyazh/2-season/10-episode.html" target="_blank" class="office-link">Майкл Скотт, 2 сезон 10 серия</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Фотоулики особой важности</h2>
+    <div class="detective-board">
+      <svg id="threads"></svg>
+      <div class="mosaic" id="board">
+        <div class="board-photo"><img src="20.jpg"><div class="pin red"></div></div>
+        <div class="board-photo"><img src="21.jpg"><div class="pin blue"></div></div>
+        <div class="board-photo"><img src="22.jpg"><div class="pin yellow"></div></div>
+        <div class="board-photo"><img src="23.jpg"><div class="pin green"></div></div>
+        <div class="board-photo"><img src="24.jpg"><div class="pin red"></div></div>
+        <div class="board-photo"><img src="25.jpg"><div class="pin blue"></div></div>
+        <div class="board-photo"><img src="26.jpg"><div class="pin yellow"></div></div>
+        <div class="board-photo"><img src="27.jpg"><div class="pin green"></div></div>
+        <div class="board-photo"><img src="28.jpg"><div class="pin yellow"></div></div>
+      </div>
+    </div>
+    <div class="archive-handle" id="archiveHandle">
+      <div class="drawer-pull"></div>
+      <div class="lock-left"></div>
+      <div class="lock-right"></div>
+    </div>
+  </section>
+
+  <section class="section secrets-section">
+      <h2 class="section-title">Секретные материалы</h2>
+      <div class="secrets-layout">
+        <div>
+          <p class="secrets-intro">Тыкай по карточкам</p>
+          <div class="secret-list">
+            <div class="secret">
+              <div class="secret-title">сюда <span>от Ксюши</span></div>
+              <div class="decoded">Лиза, С Днём рождения тебя!🥺❤️ Желаю счастья безмерного, крепкого как самый прочный сплав здоровья, чтобы ничто его сломить не смогло, солнечных и весёлых дней побольше, хороших людей рядом, преподов адекватных и удачной сессии и учебы конечно, чтобы она проходила легко и гладко. Ну и конечно же выгодного курса доллара, светлого не фильтрованного будущего, и чтобы все было, но ничего за это не было😋</div>
+            </div>
+            <div class="secret">
+              <div class="secret-title">и сюда <span>от Оли</span></div>
+              <div class="decoded">Поздравляю самую старшую герлллл нашей компашки❤️ Очень люблю и дорожу, ты сплочаешь людей и обнимаешь их в мягкое облачко. С днем рождения, любимая и незабываемая Лиза❤️💋❤️💋❤️💋❤️</div>
+            </div>
+            <div class="secret">
+              <div class="secret-title">и ещё сюда <span>от Вики</span></div>
+              <div class="decoded">С 21 годом! Пусть будет много уюта, вкусной еды и спокойных дней</div>
+            </div>
+            <div class="secret">
+              <div class="secret-title">ага и сюда не забудь <span>от Алины</span></div>
+              <div class="decoded"> Поздравляю, дорогая. Ты уже совсем большая. Пошли в казик? Ладно, ладно... Потом. Так вот. Спасибо, что ты есть. Спасибо за всю помощь, за то что рядом и за то, что не сдаешься. Ты большая молодец. Огромная. Мы все тебя очень любим. И я думаю будем рядом ещё очень долго. По крайней мере я планирую быть. Лечись, живи, выздоравливай, дыши, перетерпи ещё один годик этого дерьма. И всё будет. Правда. Не легко, но будет. Что-то меня опять занесло. Так вот! С днём рождения❤️</div>
+            </div>
+            <div class="secret">
+              <div class="secret-title">последний тык <span>от Ксеши</span></div>
+              <div class="decoded"> С вторым десятилетием и одним годом спустя! Удачных тебе додепов (не всех уток достали, Лиз, не всех), затерроризируй любой завод, на который попадешь, заработай все деньги, если не мира, то хотя бы Минска. Побольше тебе хороших дней и поменьше плохих. За что бы ты ни взялась — я уверена, что всё получится, потому что иначе у тебя не бывает. ТЫ 🫵 лучшая девочка на планете и заслуживаешь только лучшего. Спасибо, что ты есть ❤️</div>
+            </div>
+          </div>
+        </div>
+      <div class="archive-photo"><img src="33.jpg" alt="" loading="lazy" /></div>
+    </div>
+  </section>
+</main>
+
+<!-- МОДАЛЬНОЕ ОКНО АРХИВА -->
+<div class="photo-drawer-modal" id="photoDrawer">
+  <div class="drawer-content">
+    <div class="drawer-header">
+      <h3>📁 АРХИВ УЛИК</h3>
+      <button class="close-drawer" id="closeDrawer">✕</button>
+    </div>
+    <div class="drawer-grid" id="drawerGrid"></div>
+    <div style="display: flex; justify-content: flex-end; margin-top: 20px;">
+      <!-- <button class="upload-btn" id="drawerUploadBtn">➕ Загрузить улику</button> -->
+    </div>
+  </div>
+</div>
+
+<input type="file" id="hiddenUpload" accept="image/*" multiple hidden />
+
+<!-- Аудиоэлементы (4 трека) -->
+<audio id="track1" src="WarmthLeft.mp3" preload="auto"></audio>
+<audio id="track2" src="2.mp3" preload="auto"></audio>
+<audio id="track3" src="3.mp3" preload="auto"></audio>
+<audio id="track4" src="4.mp3" preload="auto"></audio> <!-- замените на свой файл для трека 4 -->
+<script>
+  // ------------------ ТАЙМЕР, БАТАРЕЯ, ZOOM ------------------
+  const siteTimer = document.getElementById("siteTimer");
+  const timerStartedAt = Date.now();
+  function updateSiteTimer() {
+    const elapsed = Date.now() - timerStartedAt;
+    const total = Math.floor(elapsed / 1000);
+    siteTimer.textContent = 
+      String(Math.floor(total / 3600)).padStart(2,"0") + ":" +
+      String(Math.floor((total % 3600) / 60)).padStart(2,"0") + ":" +
+      String(total % 60).padStart(2,"0") + ":" +
+      String(Math.floor((elapsed % 1000) / 40)).padStart(2,"0");
+  }
+  setInterval(updateSiteTimer, 80);
+
+  const batteryFill = document.getElementById("batteryFill");
+  const batteryPercent = document.getElementById("batteryPercent");
+  if (navigator.getBattery) {
+    navigator.getBattery().then(b => {
+      function updateBattery() { let p = Math.round(b.level * 100); batteryFill.style.width = p + "%"; batteryPercent.textContent = p + "%"; }
+      updateBattery();
+      b.addEventListener("levelchange", updateBattery);
+    });
+  }
+
+  const photoZoom = document.getElementById("photoZoom");
+  const photoZoomImg = document.getElementById("photoZoomImg");
+  document.querySelectorAll(".cinema-shot img").forEach(img => {
+    img.addEventListener("mouseenter", () => { photoZoomImg.src = img.src; photoZoom.classList.add("active"); });
+    img.addEventListener("mouseleave", () => { photoZoom.classList.remove("active"); });
+  });
+  document.querySelectorAll(".archive-photo img, .feature-photo img").forEach(img => {
+    img.addEventListener("click", (e) => { e.stopPropagation(); photoZoomImg.src = img.src; photoZoom.classList.add("active"); });
+  });
+
+  photoZoom.addEventListener("click", (e) => {
+    if (e.target === photoZoom) photoZoom.classList.remove("active");
+  });
+
+
+    // ================== РАДИО (УЗКИЕ СТАНЦИИ + НЕПРЕРЫВНЫЙ ШУМ + FADE) ==================
+  const audio1 = document.getElementById("track1");
+  const audio2 = document.getElementById("track2");
+  const audio3 = document.getElementById("track3");
+  const audio4 = document.getElementById("track4");
+
+  // Очень узкие диапазоны станций (по 15-20 градусов)
+  const stationMap = [
+    { min: 20,  max: 35,  audio: audio1, name: "Трек 1" },
+    { min: 100, max: 115, audio: audio4, name: "Трек 4" },
+    { min: 180, max: 195, audio: audio2, name: "Трек 2" },
+    { min: 280, max: 295, audio: audio3, name: "Трек 3" }
+  ];
+
+  let currentStationIndex = -1;   // -1 = зона помех
+  let radioOn = false;
+  let volume = 0.5;
+  let fadeTimeout = null;
+
+  // Web Audio API
+  let audioCtx = null;
+  let musicGain = null;
+  let musicFilter = null;
+  let noiseGain = null;          // отдельный gain для непрерывного шума помех
+  let noiseSource = null;        // источник непрерывного шума
+  const trackSources = new Map();
+
+  // Плавное изменение громкости
+  function setGainWithFade(gainNode, targetValue, duration = 0.8) {
+    if (!gainNode || !audioCtx) return;
+    const now = audioCtx.currentTime;
+    gainNode.gain.cancelScheduledValues(now);
+    gainNode.gain.setValueAtTime(gainNode.gain.value, now);
+    gainNode.gain.linearRampToValueAtTime(targetValue, now + duration);
+  }
+
+  async function initAudioContext() {
+    if (!audioCtx) {
+      audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+
+      // Фильтр для музыки
+      musicFilter = audioCtx.createBiquadFilter();
+      musicFilter.type = "lowpass";
+      musicFilter.frequency.value = 3500;
+      musicFilter.Q.value = 1.2;
+      musicGain = audioCtx.createGain();
+      musicGain.gain.value = 0;
+      musicFilter.connect(musicGain);
+      musicGain.connect(audioCtx.destination);
+
+      // Непрерывный шум помех (белый шум, зацикленный)
+      const bufferSize = audioCtx.sampleRate * 2;
+      const noiseBuffer = audioCtx.createBuffer(1, bufferSize, audioCtx.sampleRate);
+      const data = noiseBuffer.getChannelData(0);
+      for (let i = 0; i < bufferSize; i++) {
+        data[i] = (Math.random() * 2 - 1) * 0.3;   // амплитуда шума
+      }
+      noiseSource = audioCtx.createBufferSource();
+      noiseSource.buffer = noiseBuffer;
+      noiseSource.loop = true;
+      noiseGain = audioCtx.createGain();
+      noiseGain.gain.value = 0;
+      noiseSource.connect(noiseGain);
+      noiseGain.connect(audioCtx.destination);
+      noiseSource.start();
+    }
+
+    if (audioCtx.state !== "running") {
+      await audioCtx.resume();
+    }
+  }
+
+  function connectTrack(trackAudio) {
+    if (!audioCtx) return;
+    if (!trackSources.has(trackAudio)) {
+      const src = audioCtx.createMediaElementSource(trackAudio);
+      src.connect(musicFilter);
+      trackSources.set(trackAudio, src);
+    }
+  }
+
+  // Плавное переключение на станцию
+  async function switchToStation(newStationIndex) {
+    if (!radioOn) return;
+    
+    if (newStationIndex === -1) {
+      // Перешли в зону помех — плавно выключаем музыку, включаем шум
+      if (musicGain) setGainWithFade(musicGain, 0, 0.25);
+      if (noiseGain) setGainWithFade(noiseGain, volume * 0.7, 0.25);
+      // Останавливаем треки через небольшую задержку, чтобы fade успел завершиться
+      setTimeout(() => {
+        if (currentStationIndex === -1 && radioOn) {
+          stationMap.forEach(s => s.audio.pause());
+          stationMap.forEach(s => s.audio.currentTime = 0);
+        }
+      }, 300);
+      currentStationIndex = -1;
+      return;
+    }
+
+    // Включаем станцию (если это не та же станция)
+    if (newStationIndex === currentStationIndex) return;
+
+    const newAudio = stationMap[newStationIndex].audio;
+    if (!newAudio) return;
+
+    // Запоминаем новую станцию
+    currentStationIndex = newStationIndex;
+
+    // Плавно убираем шум
+    if (noiseGain) setGainWithFade(noiseGain, 0, 0.2);
+
+    // Останавливаем старые треки (с задержкой, чтобы не прерывать fade)
+    stationMap.forEach(s => {
+      if (s.audio !== newAudio) {
+        s.audio.pause();
+        s.audio.currentTime = 0;
+      }
+    });
+
+    // Подключаем и запускаем новый трек (с нулевой громкостью)
+    connectTrack(newAudio);
+    try {
+      await audioCtx.resume();
+      newAudio.currentTime = 0;
+      await newAudio.play();
+      if (musicGain) {
+        musicGain.gain.value = 0;
+        setGainWithFade(musicGain, volume, 5);
+      }
+    } catch (e) {
+      console.warn("play failed", e);
+    }
+  }
+
+  // ------------------ РУЧКА ------------------
+  const knob = document.getElementById("tuningKnob");
+  let knobAngle = 60;
+  let knobStartAngle = 0;
+  let isDraggingKnob = false;
+
+  function getAngleFromEvent(e) {
+    const rect = knob.getBoundingClientRect();
+    const centerX = rect.left + rect.width/2;
+    const centerY = rect.top + rect.height/2;
+    let angle = Math.atan2(e.clientY - centerY, e.clientX - centerX) * 180 / Math.PI;
+    angle = (angle + 360) % 360;
+    return angle;
+  }
+
+  function getStationIndexByAngle(angle) {
+    for (let i = 0; i < stationMap.length; i++) {
+      if (angle >= stationMap[i].min && angle <= stationMap[i].max) return i;
+    }
+    return -1;
+  }
+
+  function applyKnobAngle(angle) {
+    angle = (angle + 360) % 360;
+    knobAngle = angle;
+    const marker = knob.querySelector(".knob-marker");
+    marker.style.transform = `translateX(-50%) rotate(${angle}deg)`;
+
+    const newStationIndex = getStationIndexByAngle(angle);
+
+    if (radioOn && newStationIndex !== currentStationIndex) {
+      // Короткий треск при переключении
+      playStaticNoise(0.25);
+      switchToStation(newStationIndex);
+    }
+
+    // Визуальный фидбек: красный маркер в зоне помех
+    const isBetween = (newStationIndex === -1);
+    if (isBetween && radioOn) {
+      marker.style.boxShadow = "0 0 8px rgba(255, 50, 0, 0.8)";
+    } else {
+      marker.style.boxShadow = "none";
+    }
+  }
+
+  function onKnobMove(e) {
+    if (!isDraggingKnob) return;
+    let angle = getAngleFromEvent(e);
+    let delta = angle - knobStartAngle;
+    if (delta > 180) delta -= 360;
+    if (delta < -180) delta += 360;
+    let newAngle = knobAngle + delta;
+    if (newAngle < 0) newAngle += 360;
+    if (newAngle >= 360) newAngle -= 360;
+    knobStartAngle = angle;
+    applyKnobAngle(newAngle);
+  }
+
+  knob.addEventListener("mousedown", (e) => {
+    e.preventDefault();
+    isDraggingKnob = true;
+    knobStartAngle = getAngleFromEvent(e);
+    document.addEventListener("mousemove", onKnobMove);
+    document.addEventListener("mouseup", () => {
+      isDraggingKnob = false;
+      document.removeEventListener("mousemove", onKnobMove);
+      const marker = knob.querySelector(".knob-marker");
+      marker.style.boxShadow = "none";
+    });
+  });
+
+  // Короткий треск (для эффекта при переключении)
+  function playStaticNoise(intensity = 0.2) {
+    if (!radioOn || !audioCtx) return;
+    const duration = 0.12;
+    const bufferSize = audioCtx.sampleRate * duration;
+    const buffer = audioCtx.createBuffer(1, bufferSize, audioCtx.sampleRate);
+    const data = buffer.getChannelData(0);
+    for (let i = 0; i < bufferSize; i++) {
+      data[i] = (Math.random() * 2 - 1) * intensity;
+    }
+    const noiseSource = audioCtx.createBufferSource();
+    noiseSource.buffer = buffer;
+    const noiseGainNode = audioCtx.createGain();
+    noiseGainNode.gain.value = intensity;
+    noiseSource.connect(noiseGainNode);
+    noiseGainNode.connect(audioCtx.destination);
+    noiseSource.start();
+    noiseSource.stop(audioCtx.currentTime + duration);
+  }
+
+  // ------------------ АНТЕННА (громкость) ------------------
+  const antenna = document.getElementById("radioAntenna");
+  let antennaStartY = 0, startHeight = 70;
+  antenna.style.height = "70px";
+  antenna.addEventListener("mousedown", (e) => {
+    e.preventDefault();
+    antennaStartY = e.clientY;
+    startHeight = parseInt(antenna.style.height);
+    document.addEventListener("mousemove", onAntennaMove);
+    document.addEventListener("mouseup", () => document.removeEventListener("mousemove", onAntennaMove));
+  });
+  function onAntennaMove(e) {
+    let delta = e.clientY - antennaStartY;
+    let newHeight = Math.min(130, Math.max(30, startHeight - delta));
+    antenna.style.height = newHeight + "px";
+    let vol = (newHeight - 30) / 100;
+    vol = Math.min(1, Math.max(0.2, vol));
+    volume = vol;
+    if (radioOn && audioCtx) {
+      if (currentStationIndex !== -1 && musicGain) {
+        setGainWithFade(musicGain, volume, 0.1);
+      } else if (currentStationIndex === -1 && noiseGain) {
+        setGainWithFade(noiseGain, volume * 0.7, 0.1);
+      }
+    }
+  }
+
+  // ------------------ КНОПКА ВКЛЮЧЕНИЯ ------------------
+  const powerBtn = document.getElementById("powerBtn");
+  powerBtn.addEventListener("click", async () => {
+    radioOn = !radioOn;
+
+    if (radioOn) {
+      powerBtn.classList.add("active");
+      await initAudioContext();
+
+      const startIndex = getStationIndexByAngle(knobAngle);
+      if (startIndex !== -1) {
+        // На станции
+        currentStationIndex = startIndex;
+        const startAudio = stationMap[startIndex].audio;
+        connectTrack(startAudio);
+        try {
+          await audioCtx.resume();
+          startAudio.currentTime = 0;
+          await startAudio.play();
+          if (musicGain) {
+            musicGain.gain.value = 0;
+            setGainWithFade(musicGain, volume, 0.5);
+          }
+        } catch (e) { console.warn(e); }
+        if (noiseGain) setGainWithFade(noiseGain, 0, 0.2);
+      } else {
+        // В зоне помех
+        currentStationIndex = -1;
+        if (noiseGain) setGainWithFade(noiseGain, volume * 0.7, 0.3);
+        if (musicGain) setGainWithFade(musicGain, 0, 0.1);
+      }
+    } else {
+      powerBtn.classList.remove("active");
+      // Плавно выключаем всё
+      if (musicGain) setGainWithFade(musicGain, 0, 0.2);
+      if (noiseGain) setGainWithFade(noiseGain, 0, 0.2);
+      setTimeout(() => {
+        if (!radioOn) {
+          stationMap.forEach(s => {
+            s.audio.pause();
+            s.audio.currentTime = 0;
+          });
+        }
+      }, 250);
+    }
+  });
+
+  // Начальное положение маркера
+  const marker = knob.querySelector(".knob-marker");
+  marker.style.transform = `translateX(-50%) rotate(${knobAngle}deg)`;
+  currentStationIndex = getStationIndexByAngle(knobAngle);
+
+
+
+  // ------------------ АРХИВНОЕ ОКНО (без изменений) ------------------
+  const drawerModal = document.getElementById("photoDrawer");
+  const archiveHandle = document.getElementById("archiveHandle");
+  const closeDrawerBtn = document.getElementById("closeDrawer");
+  const drawerGrid = document.getElementById("drawerGrid");
+  const hiddenUpload = document.getElementById("hiddenUpload");
+  const drawerUploadBtn = document.getElementById("drawerUploadBtn");
+
+  function getAllArchivePhotos() {
+    const boardPhotos = Array.from(document.querySelectorAll("#board .board-photo")).map(photo => {
+      return { src: photo.querySelector("img").src, isFromBoard: true };
+    });
+    const staticPhotos = [];
+    for (let i = 1; i <= 89; i++) {
+      staticPhotos.push({ src: i + ".jpg", isFromBoard: false });
+    }
+    return [...boardPhotos, ...staticPhotos];
+  }
+
+  function refreshDrawerGrid() {
+    const allPhotos = getAllArchivePhotos();
+    drawerGrid.innerHTML = "";
+    allPhotos.forEach((photo, idx) => {
+      const div = document.createElement("div");
+      div.className = "drawer-photo";
+      const img = document.createElement("img");
+      img.src = photo.src;
+      img.loading = "lazy";
+      img.oncontextmenu = (e) => { return true; };
+      div.appendChild(img);
+      div.addEventListener("click", (e) => {
+        e.stopPropagation();
+        openPhotoViewer(idx);
+      });
+      drawerGrid.appendChild(div);
+    });
+  }
+
+  let currentViewerIndex = 0;
+  let viewerElement = null;
+
+  function openPhotoViewer(index) {
+    const allPhotos = getAllArchivePhotos();
+    if (!allPhotos.length) return;
+    currentViewerIndex = index;
+    if (viewerElement) viewerElement.remove();
+    viewerElement = document.createElement("div");
+    viewerElement.className = "photo-viewer";
+    const card = document.createElement("div");
+    card.className = "viewer-card";
+    const img = document.createElement("img");
+    img.src = allPhotos[currentViewerIndex].src;
+    img.style.maxWidth = "calc(85vw - 60px)";
+    img.style.maxHeight = "calc(85vh - 100px)";
+    img.oncontextmenu = (e) => { return true; };
+    const closeBtn = document.createElement("div");
+    closeBtn.className = "viewer-close";
+    closeBtn.innerHTML = "✕";
+    closeBtn.onclick = (e) => {
+      e.stopPropagation();
+      viewerElement.remove();
+      viewerElement = null;
+    };
+    const prevBtn = document.createElement("div");
+    prevBtn.className = "viewer-nav viewer-prev";
+    prevBtn.innerHTML = "◀";
+    prevBtn.onclick = (e) => {
+      e.stopPropagation();
+      if (currentViewerIndex > 0) {
+        currentViewerIndex--;
+        img.src = allPhotos[currentViewerIndex].src;
+      }
+    };
+    const nextBtn = document.createElement("div");
+    nextBtn.className = "viewer-nav viewer-next";
+    nextBtn.innerHTML = "▶";
+    nextBtn.onclick = (e) => {
+      e.stopPropagation();
+      if (currentViewerIndex < allPhotos.length - 1) {
+        currentViewerIndex++;
+        img.src = allPhotos[currentViewerIndex].src;
+      }
+    };
+    card.appendChild(closeBtn);
+    card.appendChild(prevBtn);
+    card.appendChild(nextBtn);
+    card.appendChild(img);
+    viewerElement.appendChild(card);
+    viewerElement.onclick = (e) => {
+      if (e.target === viewerElement) {
+        viewerElement.remove();
+        viewerElement = null;
+      }
+    };
+    const keyHandler = (e) => {
+      if (!viewerElement) {
+        document.removeEventListener("keydown", keyHandler);
+        return;
+      }
+      if (e.key === "ArrowLeft") {
+        if (currentViewerIndex > 0) {
+          currentViewerIndex--;
+          img.src = allPhotos[currentViewerIndex].src;
+        }
+      } else if (e.key === "ArrowRight") {
+        if (currentViewerIndex < allPhotos.length - 1) {
+          currentViewerIndex++;
+          img.src = allPhotos[currentViewerIndex].src;
+        }
+      } else if (e.key === "Escape") {
+        viewerElement.remove();
+        viewerElement = null;
+        document.removeEventListener("keydown", keyHandler);
+      }
+    };
+    document.addEventListener("keydown", keyHandler);
+    document.body.appendChild(viewerElement);
+  }
+
+  archiveHandle.addEventListener("click", () => {
+    refreshDrawerGrid();
+    drawerModal.classList.add("active");
+  });
+  closeDrawerBtn.addEventListener("click", () => drawerModal.classList.remove("active"));
+  drawerModal.addEventListener("click", (e) => { if (e.target === drawerModal) drawerModal.classList.remove("active"); });
+
+  if (drawerUploadBtn) {
+    drawerUploadBtn.addEventListener("click", () => hiddenUpload.click());
+  }
+  hiddenUpload.onchange = (e) => {
+    [...e.target.files].forEach(file => {
+      const reader = new FileReader();
+      reader.onload = () => {
+        const div = document.createElement("div");
+        div.className = "board-photo";
+        div.style.left = "200px";
+        div.style.top = "200px";
+        div.innerHTML = `<div class="pin red"></div><img src="${reader.result}">`;
+        document.getElementById("board").appendChild(div);
+        initPhoto(div);
+        saveBoard();
+        if (drawerModal.classList.contains("active")) {
+          refreshDrawerGrid();
+        }
+      };
+      reader.readAsDataURL(file);
+    });
+    hiddenUpload.value = "";
+  };
+
+  // ------------------ ДОСКА (нитки и т.д.) ------------------
+  const boardEl = document.getElementById("board");
+  const threadsSvg = document.getElementById("threads");
+  let connections = [];
+  let threadMode = false;
+  let selectedPhoto = null;
+
+  function initPhoto(photo) {
+    if (!photo.dataset.id) photo.dataset.id = Date.now() + Math.random() + Math.random();
+    photo.addEventListener("mousedown", startDrag);
+    photo.addEventListener("click", photoClick);
+  }
+
+  function startDrag(e) {
+    if (threadMode) return;
+    const el = e.currentTarget;
+    let startX = e.clientX, startY = e.clientY;
+    let left = el.offsetLeft, top = el.offsetTop;
+    function move(ev) {
+      let dx = ev.clientX - startX, dy = ev.clientY - startY;
+      el.style.left = left + dx + "px";
+      el.style.top = top + dy + "px";
+      updateThreads();
+      saveBoard();
+    }
+    function stop() { document.removeEventListener("mousemove", move); }
+    document.addEventListener("mousemove", move);
+    document.addEventListener("mouseup", stop, { once: true });
+  }
+
+  function photoClick(e) {
+    if (!threadMode) return;
+    const current = e.currentTarget;
+    if (!selectedPhoto) { selectedPhoto = current; current.style.outline = "5px solid red"; return; }
+    selectedPhoto.style.outline = "";
+    connections.push({ a: selectedPhoto.dataset.id, b: current.dataset.id });
+    selectedPhoto = null;
+    updateThreads();
+    saveBoard();
+  }
+
+  function updateThreads() {
+    threadsSvg.innerHTML = "";
+    connections.forEach((c, idx) => {
+      const a = document.querySelector(`[data-id="${c.a}"]`);
+      const b = document.querySelector(`[data-id="${c.b}"]`);
+      if (!a || !b) return;
+      const x1 = a.offsetLeft + a.offsetWidth / 2;
+      const y1 = a.offsetTop + 90;
+      const x2 = b.offsetLeft + b.offsetWidth / 2;
+      const y2 = b.offsetTop + 90;
+      const dx = Math.abs(x2 - x1);
+      const sag = Math.min(70, dx * 0.25 + 25);
+      const midX = (x1 + x2) / 2;
+      const midY = (y1 + y2) / 2 + sag;
+      const group = document.createElementNS("http://www.w3.org/2000/svg", "g");
+      const hitbox = document.createElementNS("http://www.w3.org/2000/svg", "path");
+      hitbox.setAttribute("d", `M ${x1} ${y1} Q ${midX} ${midY} ${x2} ${y2}`);
+      hitbox.classList.add("thread-hitbox");
+      const line = document.createElementNS("http://www.w3.org/2000/svg", "path");
+      line.setAttribute("d", `M ${x1} ${y1} Q ${midX} ${midY} ${x2} ${y2}`);
+      line.classList.add("thread-line");
+      group.appendChild(hitbox);
+      group.appendChild(line);
+      group.addEventListener("click", (e) => {
+        e.stopPropagation();
+        connections.splice(idx, 1);
+        updateThreads();
+        saveBoard();
+      });
+      threadsSvg.appendChild(group);
+    });
+  }
+
+  function saveBoard() {
+    localStorage.setItem("board", boardEl.innerHTML);
+    localStorage.setItem("threads", JSON.stringify(connections));
+  }
+
+  function restoreBoard() {
+    const saved = localStorage.getItem("board");
+    const savedThreads = localStorage.getItem("threads");
+    if (saved) boardEl.innerHTML = saved;
+    if (savedThreads) connections = JSON.parse(savedThreads);
+    if (!Array.isArray(connections)) connections = [];
+    document.querySelectorAll(".board-photo").forEach(initPhoto);
+    setTimeout(updateThreads, 100);
+  }
+
+  restoreBoard();
+  window.addEventListener("resize", () => updateThreads());
+
+  function toggleThreadMode() {
+    threadMode = !threadMode;
+    if (threadMode) {
+      document.body.classList.add("thread-mode");
+      if (selectedPhoto) {
+        selectedPhoto.style.outline = "";
+        selectedPhoto = null;
+      }
+    } else {
+      document.body.classList.remove("thread-mode");
+      if (selectedPhoto) {
+        selectedPhoto.style.outline = "";
+        selectedPhoto = null;
+      }
+    }
+    const threadBtn = document.getElementById("threadModeBtn");
+    if (threadBtn) {
+      if (threadMode) threadBtn.classList.add("active");
+      else threadBtn.classList.remove("active");
+    }
+  }
+
+  const boardControls = document.createElement("div");
+  boardControls.className = "board-controls";
+  const threadBtn = document.createElement("button");
+  threadBtn.id = "threadModeBtn";
+  threadBtn.innerHTML = "🧵";
+  threadBtn.onclick = () => toggleThreadMode();
+  const saveBtn = document.createElement("button");
+  saveBtn.innerHTML = "+ добавить улику";
+  saveBtn.onclick = () => hiddenUpload.click();
+  boardControls.appendChild(threadBtn);
+  boardControls.appendChild(saveBtn);
+  document.querySelector(".detective-board").prepend(boardControls);
+
+  threadMode = false;
+  document.body.classList.remove("thread-mode");
+  threadBtn.classList.remove("active");
+
+
+  // Горизонтальный скролл для блока .cinema-strip через колёсико мыши
+const cinemaStrip = document.querySelector('.cinema-strip');
+if (cinemaStrip) {
+  cinemaStrip.addEventListener('wheel', (e) => {
+    if (e.deltaY !== 0) {
+      e.preventDefault();                // отменяем вертикальный скролл страницы
+      cinemaStrip.scrollLeft += e.deltaY; // прокручиваем горизонтально
+    }
+  }, { passive: false });
+}
+</script>
+</body>
+</html>
